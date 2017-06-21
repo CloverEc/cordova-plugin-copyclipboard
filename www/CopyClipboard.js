@@ -1,5 +1,4 @@
 var exec = require('cordova/exec');
-
-module.exports = function(name, successCallback, errorCallback) {
-    cordova.exec(successCallback, errorCallback, "CopyClipboard", "coolMethod", [name]);
-}
+exports.coolMethod = function(arg0, success, error) {
+    exec(success, error, "CopyClipboard", "coolMethod", [arg0]);
+};
