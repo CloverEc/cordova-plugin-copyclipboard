@@ -12,5 +12,13 @@ public class CopyClipboard extends CordovaPlugin {
       String message = "Hello, World !!! " + "Hello, " + name;
       callbackContext.success(message);
       return true;
+      if (action.equals("coolMethod")) {
+        String name = data.getString(0);
+        String message = "Hello, World !!! " + "Hello, " + name;
+        callbackContext.success(message);
+        return true;
+      } else {
+        return false;
+      }
     }
 }
