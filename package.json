@@ -17,7 +17,7 @@
     "cordova-android"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/CloverEc/cordova-plugin-copy-clipboard/issues"
   },

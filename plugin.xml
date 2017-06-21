@@ -7,7 +7,7 @@
     <platform name="android">
       <config-file target="config.xml" parent="/*">
         <feature name="CopyClipboard">
-          <param name="android-package" value="cordova-plugin-copy-clipboard"/>
+          <param name="android-package" value="plugin.copy.clipboard"/>
         </feature>
       </config-file>
       <source-file src="src/android/CopyClipboard.java" target-dir="src/plugin/cordova-plugin-copy-clipboard/"/>
