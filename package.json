@@ -1,25 +1,32 @@
 {
-  "name": "cordova-plugin-copy-clipboard",
-  "version": "0.0.1",
-  "description": "for Android simple copy text to clipboard.",
+  "name": "cordova-plugin-copyclipboard",
+  "version": "1.0.0",
+  "description": "This is a first plugin !!",
   "cordova": {
-    "id": "cordova-plugin-copy-clipboard",
+    "id": "cordova-plugin-copyclipboard",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CloverEc/cordova-plugin-copy-clipboard.git"
+    "url": "git+https://github.com/CloverEc/cordova-plugin-copyclipboard.git"
   },
   "keywords": [
+    "copyclipboard",
     "ecosystem:cordova",
     "cordova-android"
   ],
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">5.0.0"
+    }
+  ],
   "author": "",
-  "license": "MIT",
+  "license": "Sample License",
   "bugs": {
-    "url": "https://github.com/CloverEc/cordova-plugin-copy-clipboard/issues"
+    "url": "https://github.com/CloverEc/cordova-plugin-copyclipboard/issues"
   },
-  "homepage": "https://github.com/CloverEc/cordova-plugin-copy-clipboard#readme"
+  "homepage": "https://github.com/CloverEc/cordova-plugin-copyclipboard#readme"
 }

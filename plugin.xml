@@ -1,15 +1,40 @@
-<?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-copy-clipboard" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>CopyClipboard</name>
-    <js-module name="CopyClipboard" src="www/CopyClipboard.js">
-        <clobbers target="cordova.plugins.CopyClipboard" />
-    </js-module>
-    <platform name="android">
-      <config-file target="config.xml" parent="/*">
-        <feature name="CopyClipboard">
-          <param name="android-package" value="plugin.copyclipboard.CopyClipboard"/>
-        </feature>
-      </config-file>
-      <source-file src="src/android/CopyClipboard.java" target-dir="src/plugin/copyclipboard/"/>
-    </platform>
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- id: プラグインの識別子、version: プラグインのバージョン -->
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="cordova-plugin-copyclipboard"
+  version="1.0.0">
+
+  <!-- プラグイン名 -->
+  <name>HelloWorld</name>
+  <!-- プラグインの説明 -->
+  <description>This is a first plugin !!</description>
+  <!-- 作者 -->
+  <author>cigalecigales</author>
+  <!-- キーワード -->
+  <keywords>hello, world</keywords>
+  <!-- ライセンス -->
+  <license>Sample License</license>
+  <!-- プラグインがサポートするCordovaのバージョン -->
+  <engines>
+    <engine name="cordova-android" version=">5.0.0"/>
+  </engines>
+  <!-- JSの場所指定。name: モジュール名 -->
+  <js-module src="www/copyclipboard.js" name="copyclipboard">
+    <clobbers target="copyclipboard"/>
+  </js-module>
+
+  <!-- Android用の設定 -->
+  <platform name="android">
+    <!-- Androidのconfig.xmlはここ→project/platform/android/res/xml/config.xmlにあるのでそこに反映するように -->
+    <config-file target="res/xml/config.xml" parent="/*">
+      <!-- Cordovaはfeatureタグをみて、どのプラグインが有効か見る。以下の情報が上記のファイルに追加される。 -->
+      <feature name="copyclipboard">
+        <param name="android-package" value="plugin.copyclipboard.CopyClipboard"/>
+      </feature>
+    </config-file>
+    <!-- Javaのソースファイル。 target-dir: ファイルがコンパイルされるべき場所 -->
+    <!-- 以下だとproject/platform/android/src/plugin/helloworld/以下になる -->
+    <source-file src="src/android/CopyClipboard.java" target-dir="src/plugin/copyclipboard/"/>
+  </platform>
 </plugin>
